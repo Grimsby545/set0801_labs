@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>The Infuriating Quiz</title>
+	<link rel="stylesheet" href="Content.css" type="text/css">
+</head>
+	<body>
+		<Header>
+			<h1>The Infuriating Quiz</h1>
+			<h2>A showcase on the worst quiz design 
+				errors and how to avoid them</h2>
+		</Header>
+		<div class=question_div>
+			<p class=quiz_num>Question #1</p>
+			<p class="text"> How old is Beyonce in years </p>
+			<div class=question id="question">
+				<ul>
+						<input id="pressed1" type="radio" class="answer" name="Q1" value="">
+						<label>18 - 30 years old</label>
+					<br>
+						<input id="pressed2" type="radio" class="answer" name="Q1" value="0">
+						<label>30 - 40 years old</label>
+					<br>
+						<input id="pressed3" type="radio" class="answer" name="Q1" value="1">
+						<label>40 - 50 years old</label>
+					<br>
+						<input id="pressed4" type="radio" class="answer" name="Q1" value="0">
+						<label>50+ years old</label>
+					<br>
+				</ul>
+			</div>
+				<button class="button" type="button" onclick="Question1()">Enter</button>
+			<div class="inlinediv">
+				<div class="answerA" id="answerA">Correct Beyonce is 40 years old</div>
+				<div class="answerB" id="answerB"> Incorrect, Try Again</div>
+				<button class="explainationButton" type="button" onclick="show()" onmouseout="mouseout()" onmouseover="mouseover()" id="explainationButton">
+				Question Explaination</button></a>
+				<div id="explaination" class="explaination">when asking a question age bands you should avoid 
+				overlapping numbers so that the user doesnt has to guess </div>
+			</div>
+		</div>	
+		<nav>
+			<a href="#" class="previous round">&#8249;</a>
+			<a href="#" class="next round">&#8250;</a>
+		</nav>
+		<footer> 
+			<p> &copy; 2022 - The Infuriating Quiz - All rights reserved  </p>
+		</footer>
+		<script src="Question1.js"></script>
+	</body>
+</html>
